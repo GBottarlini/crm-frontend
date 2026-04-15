@@ -1,74 +1,62 @@
-# 💻 Frontend - Gestión de Clientes - Concesionario Nation
+# 📊 Sales Follow-Up CRM
 
-Este es el frontend del sistema de gestión de clientes desarrollado para **Nation**, una plataforma creada para facilitar campañas de marketing enfocadas en la venta de neumáticos, permitiendo una segmentación inteligente de clientes basada en datos de uso.
+Internal CRM system designed to replace spreadsheet-based lead management and improve sales team efficiency.
 
----
+## Problem
 
-## 🌟 Características principales
+Customer follow-up was managed in Excel, making it slow to filter leads, identify the right contacts, and track outreach effectively.
 
-- Interfaz intuitiva para buscar y filtrar clientes por:
-  - Kilometraje del vehículo
-  - Sucursal
-  - Patente u otros datos clave
-- Bloqueo visual de clientes ya consultados por otros usuarios (en tiempo real)
-- Diseño responsivo con estilo profesional
-- Conexión WebSocket con el backend para actualización sin recarga
-- Tailwind CSS para estilos rápidos y modernos
+This created operational friction, duplicated contact attempts, and limited the team's ability to scale follow-up processes.
 
----
+## Solution
 
-## 🛠️ Tecnologías utilizadas
+I designed and built this CRM from scratch as a full stack internal tool focused on lead prioritization, customer visibility, and real-time team coordination.
 
-- **HTML5**
-- **CSS3 + Tailwind CSS**
-- **JavaScript Vanilla**
-- **WebSocket**
-- **Netlify** (deploy)
+The system centralizes customer data, enables advanced filtering, and allows teams to track follow-up activity efficiently.
 
----
+## Technologies
 
-## 📁 Estructura del proyecto
+- JavaScript
+- Node.js
+- Express
+- MongoDB
+- Tailwind CSS
+- WebSockets (Socket.IO)
+
+## Key Features
+
+- Advanced multi-criteria filtering for customer segmentation
+- Centralized customer records with relevant business data
+- Follow-up notes to maintain commercial continuity
+- Real-time updates to prevent overlap between users
+- Contact tracking to avoid duplicate outreach
+- Responsive interface optimized for daily use
+
+## Impact
+
+- Reduced time required to identify and prioritize leads
+- Improved team coordination and follow-up efficiency
+- Eliminated duplicate contact attempts
+- Replaced a manual spreadsheet-based workflow with a scalable system
+
+## Status
+
+Production-style internal tool built for a real business environment.
+
+## My Role
+
+Full ownership of the project:
+- System design and architecture
+- Backend development and business logic
+- Database modeling and integration
+- Real-time synchronization using WebSockets
+
+## Demo
+
+No public demo available (internal business system).
+
+## Installation
 
 ```bash
-frontNation-main/
-├── index.html            # Página principal
-├── scripts/
-│   └── app.js            # Lógica del frontend y WebSocket
-├── styles/
-│   ├── styles.css        # Estilos personalizados
-│   └── tailwind.css      # Estilos base de Tailwind
-├── img/                  # Logos e imágenes
-```
-
----
-
-## 🚀 ¿Cómo usarlo?
-
-1. Clona el repositorio y accede a la carpeta:
-
-```bash
-git clone https://github.com/tu-usuario/frontNation.git
-cd frontNation-main
-```
-
-2. Ejecuta un servidor local, por ejemplo con `live-server`:
-
-```bash
-live-server
-```
-
-3. Asegúrate de que el backend esté corriendo y que la URL esté correctamente apuntada en `scripts/app.js`.
-
-4. También puedes visitar la versión desplegada:
-
-🔗 [https://gestionclientessa.netlify.app](https://gestionclientessa.netlify.app)
-
----
-
-## 🧠 Notas del desarrollador
-
-Este proyecto fue desarrollado completamente por mí, como parte de una solución para una campaña de marketing real del concesionario **Nación**. El frontend representa un gran aprendizaje y dedicación, integrando lógica de negocio, experiencia de usuario y comunicación en tiempo real.
-
-Fue un reto técnico que me dio muchas alegrías y me ayudó a consolidar habilidades tanto de desarrollo como de diseño enfocado al usuario.
-
----
+npm install
+npm run dev
